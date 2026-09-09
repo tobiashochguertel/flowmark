@@ -408,3 +408,36 @@ def test_multi_paragraph_spacing_loose_mode():
     assert (
         fill_markdown(input_doc, semantic=True, list_spacing=ListSpacing.loose) == expected_output
     )
+
+
+def test_mixed_list_preserved():
+    """Mixed lists (blank lines between only some items) keep their authored spacing."""
+    input_doc = dedent(
+        """
+        - All lowercase.
+        - No Title Case.
+
+        - Uppercase reserved.
+        - Last one.
+        """
+    ).strip()
+    expected_output = input_doc + "\n"
+
+    assert fill_markdown(input_doc, list_spacing=ListSpacing.preserve) == expected_output
+
+
+def test_mixed_list_not_flattened_to_loose():
+    """A single blank between groups must not loosen every item (regression)."""
+    input_doc = dedent(
+        """
+        - one
+        - two
+
+        - three
+        - four
+        """
+    ).strip()
+
+    output = fill_markdown(input_doc, list_spacing=ListSpacing.preserve)
+    # Tight groups stay tight; only the authored blank remains.
+    assert output == "- one\n- two\n\n- three\n- four\n"
