@@ -467,10 +467,17 @@ def attach_preserve_list_boundaries(document: block.Document, parser_text: str) 
             boundaries: set[int] = set()
             any_internal_blank = False
             for item in items:
-                item_start, item_end = block_span(item)
-                item_text = parser_text[item_start:item_end]
-                if "\n\n" in item_text:
-                    any_internal_blank = True
+                # Only blank lines between the item's own sibling blocks count;
+                # blank lines inside a code block or a nested list do not.
+                children = [
+                    c
+                    for c in item.children
+                    if isinstance(c, block.BlockElement) and not isinstance(c, block.BlankLine)
+                ]
+                for j in range(1, len(children)):
+                    gap = parser_text[block_span(children[j - 1])[1] : block_span(children[j])[0]]
+                    if "\n" in gap:
+                        any_internal_blank = True
             for i in range(1, len(items)):
                 # Each item span includes its trailing newline, so a blank line
                 # between items shows up as a gap containing a further "\n".

@@ -457,7 +457,6 @@ $$
 $$
 
 Final paragraph of the comprehensive document.
-? 0
 ````
 
 ## F17: Width 2 (edge case — very small width does not crash)

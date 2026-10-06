@@ -8,7 +8,7 @@
 # 195b5ce. flowmark-rs keeps the same ledger at tests/idempotence_known_divergences.toml,
 # and the two are deliberately separate — a defect one port carries and the other does
 # not is exactly what the pair is meant to make visible. Today Rust carries 66 entries to
-# this file's 90; the nested-list spacing defect below is the Python-only difference.
+# this file's 78; the nested-list spacing defect below is the Python-only difference.
 #
 # See the epic fm-sk2n.
 
@@ -17,271 +17,397 @@ schema_version = 1
 # wrapped line beginning with '=' is reparsed as a setext underline (fm-kv5i)
 
 [[divergence]]
-document = 'tests/parity_corpus/cases/preservation/extensions/raw-html/angle-comparisons/input.md'
-mode = 'narrow'
-bead = 'fm-kv5i'
+document = "tests/parity_corpus/cases/preservation/extensions/raw-html/angle-comparisons/input.md"
+mode = "narrow"
+bead = "fm-kv5i"
 
 [[divergence]]
-document = 'tests/testdocs/testdoc.expected.auto.md'
-mode = 'narrow'
-bead = 'fm-kv5i'
+document = "tests/testdocs/testdoc.expected.auto.md"
+mode = "narrow"
+bead = "fm-kv5i"
 
 [[divergence]]
-document = 'tests/testdocs/testdoc.expected.cleaned.md'
-mode = 'narrow'
-bead = 'fm-kv5i'
+document = "tests/testdocs/testdoc.expected.cleaned.md"
+mode = "narrow"
+bead = "fm-kv5i"
 
 [[divergence]]
-document = 'tests/testdocs/testdoc.expected.plain.md'
-mode = 'narrow'
-bead = 'fm-kv5i'
+document = "tests/testdocs/testdoc.expected.plain.md"
+mode = "narrow"
+bead = "fm-kv5i"
 
 [[divergence]]
-document = 'tests/testdocs/testdoc.expected.semantic.md'
-mode = 'narrow'
-bead = 'fm-kv5i'
+document = "tests/testdocs/testdoc.expected.semantic.md"
+mode = "narrow"
+bead = "fm-kv5i"
 
 [[divergence]]
-document = 'tests/testdocs/testdoc.orig.md'
-mode = 'narrow'
-bead = 'fm-kv5i'
+document = "tests/testdocs/testdoc.orig.md"
+mode = "narrow"
+bead = "fm-kv5i"
+
+# setext heading with multi-line content splits on the second pass (fm-k7yk)
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/expected.default.md"
+mode = "narrow"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0081/input.md"
+mode = "narrow"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/expected.default.md"
+mode = "narrow"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0082/input.md"
+mode = "narrow"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/expected.default.md"
+mode = "narrow"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0095/input.md"
+mode = "narrow"
+bead = "fm-k7yk"
+
+# empty ordered-list item is dropped, then the list renumbers (fm-k7yk)
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/expected.default.md"
+mode = "narrow"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md'
-mode = 'default'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md"
+mode = "default"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md'
-mode = 'semantic'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md"
+mode = "semantic"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md'
-mode = 'cleanups'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md"
+mode = "cleanups"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md'
-mode = 'typography'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md"
+mode = "typography"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md'
-mode = 'nowrap'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md"
+mode = "nowrap"
+bead = "fm-k7yk"
 
 [[divergence]]
-document = 'tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md'
-mode = 'narrow'
-bead = 'fm-k7yk'
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0283/input.md"
+mode = "narrow"
+bead = "fm-k7yk"
+
+# nested list gains a blank line on the second pass, turning tight loose (fm-82mg)
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/expected.default.md"
+mode = "default"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/expected.default.md"
+mode = "semantic"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/expected.default.md"
+mode = "cleanups"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/expected.default.md"
+mode = "typography"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/expected.default.md"
+mode = "nowrap"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/expected.default.md"
+mode = "narrow"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/input.md"
+mode = "default"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/input.md"
+mode = "semantic"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/input.md"
+mode = "cleanups"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/input.md"
+mode = "typography"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/input.md"
+mode = "nowrap"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0307/input.md"
+mode = "narrow"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/expected.default.md"
+mode = "default"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/expected.default.md"
+mode = "semantic"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/expected.default.md"
+mode = "cleanups"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/expected.default.md"
+mode = "typography"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/expected.default.md"
+mode = "nowrap"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/expected.default.md"
+mode = "narrow"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/input.md"
+mode = "default"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/input.md"
+mode = "semantic"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/input.md"
+mode = "cleanups"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/input.md"
+mode = "typography"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/input.md"
+mode = "nowrap"
+bead = "fm-82mg"
+
+[[divergence]]
+document = "tests/parity_corpus/spec/commonmark-0.31.2/examples/0319/input.md"
+mode = "narrow"
+bead = "fm-82mg"
